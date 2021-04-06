@@ -1,0 +1,25 @@
+{
+    "name": "abhishekkumar/o365-excel-to-web",
+    "description": "Serve excelsheet as JSON response via API",
+    "type": "library",
+    "require": {
+        "box/spout": "^2.7",
+        "mikecao/flight": "^1.3"
+    },
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Abhishek Kumar",
+            "email": "akbittu@gmail.com"
+        }
+    ],
+    "scripts": {
+        "start": "php -S localhost:8888",
+        "test": [
+            "open http://localhost:8888/?ws=jira",
+            "curl http://localhost:8888/ws/jira",
+            "open http://localhost:8888/?ws=zendesk",
+            "curl http://localhost:8888/ws/zendesk"
+        ]
+    }
+}
